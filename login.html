@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login/Register Form</title>
+<link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+  <div style="display: flex; align-items: center; justify-content: center;">
+  <h1 style="text-align: center;">VOTER LOGIN </h1>
+  </div>
+    
+    <form action="login.php" method="post">
+        Email: <input type="email" name="email" required><br>
+        Password: <input type="password" name="password" required><br>
+        <input type="submit" value="Login">
+		 <a href="password.php">Forgot password?</a>
+    </form>
+<div style="display: flex; align-items: center; justify-content: center;">
+  <h1 style="text-align: center;"VOTER REGISTERATION</h1>
+</div>
+    
+    <form action="register.php" method="post">
+        Name: <input type="text" name="name" required><br>
+        Aadhaar Number: <input type="text" name="aadhaar_number" required><br>
+        Voter ID: <input type="text" name="voter_id" required><br>
+        Phone Number: <input type="text" name="phone_number" required><br>
+        Address: <input type="text" name="address" required><br>
+        Age: <input type="text" name="age" required><br>
+        Gender: <br>
+        <input type="radio" name="gender" value="Male"> Male
+        <input type="radio" name="gender" value="Female"> Female
+        <input type="radio" name="gender" value="Other"> Other<br><br>
+        National ID: <input type="text" name="national_id" required><br>
+        Unique Passcode: <input type="password" name="passcode" required><br>
+        Email: <input type="email" name="email" required><br>
+        Ward Number: <input type="text" name="ward_number" required><br>
+        <input type="submit" value="Register">
+    </form>
+	<section>
+ <a href="index.html">Go Home</a>	 
+      </section> 
+</body>
+</html>

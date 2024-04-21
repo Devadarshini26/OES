@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Complaint Form</title>
+<style>
+/* Styles for forms */
+form {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    margin-bottom: 20px;
+    margin-left: 15%;
+    margin-right:15%;
+    width: 72%;
+}
+
+/* Styles for input fields */
+input[type="text"],
+input[type="password"],
+input[type="email"],
+input[type="submit"],
+input[type="radio"],
+textarea {
+    width: 300px;
+    padding: 10px;
+    margin: 5px 0;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+/* Styles for submit button */
+input[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    display: block;
+    margin: 0 auto;
+}
+
+/* Change submit button color on hover */
+input[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+/* Responsive styles */
+@media (max-width: 600px) {
+    form {
+        width: 80%;
+        margin: 0 auto;
+    }
+}
+</style>
+</head>
+<body>
+<h1 style="text-align: center;">COMPLAINT</h1>
+<form action="complaintform.php" method="post">
+  <div class="form-group">
+    <label for="full_name">Full Name</label>
+    <input type="text" id="full_name" name="full_name" required>
+  </div>
+  <div class="form-group">
+    <label for="date_of_incident">Date of Incident</label>
+    <input type="date" id="date_of_incident" name="date_of_incident" required>
+  </div>
+  <div class="form-group">
+    <label for="nature_of_complaint">Nature of Complaint</label>
+    <input type="text" id="nature_of_complaint" name="nature_of_complaint" required>
+  </div>
+  <div class="form-group">
+    <label for="description_of_incident">Description of Incident</label>
+    <textarea id="description_of_incident" name="description_of_incident" rows="4" required></textarea>
+  </div>
+  <div class="form-group">
+    <label for="contact_information">Contact Information</label>
+    <input type="text" id="contact_information" name="contact_information" required>
+  </div>
+  <input type="submit" value="Submit">
+</form>
+<section>
+ <a href="index.html">Go Home</a>	 
+      </section> 
+</body>
+</html>
